@@ -60,7 +60,7 @@ export default function Update() {
   }
   return(
     <>
-      <div>
+      <div className="h-64 flex items-center justify-center ">
         <form noValidate onSubmit={updateBook}>
           <div>
             <label htmlFor="">Book Tittle</label>

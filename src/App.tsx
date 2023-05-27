@@ -1,6 +1,14 @@
+import { createContext, useState } from 'react'
+import Nama from './Nama'
 
-export default function App() {
+export const ContextNama = createContext("")
+
+export function App() {
+  const [nama, setNama] = useState("")
   return (
-    <div>App</div>
+    <ContextNama.Provider value={nama}>
+      <input type="text" onChange={(e)=>setNama(e.target.value)} />
+      <Nama />
+    </ContextNama.Provider>
   )
 }

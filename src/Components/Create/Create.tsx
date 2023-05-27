@@ -40,11 +40,11 @@ export default function Create() {
   };
   return (
     <>
-      <div>
+      <div className="h-64 flex items-center justify-center">
         <form noValidate onSubmit={submit}>
-          <div>
-            <label htmlFor="">Book Tittle</label>
-            <input
+          <div className="text-lg text-orange-600">
+            <label className="mx-3" htmlFor="">Book Tittle</label>
+            <input className="focus:ring-0 focus:outline focus:outline-orange-500 focus:rounded-md"
               type="text"
               placeholder="Book Tittle"
               name="name"
@@ -59,9 +59,9 @@ export default function Create() {
             />
           </div>
           <br />
-          <div>
-            <label htmlFor="">Book Author</label>
-            <input
+          <div className="text-lg text-orange-600">
+            <label className="mx-3" htmlFor="">Book Author</label>
+            <input className="focus:ring-0 focus:outline focus:outline-orange-500 focus:rounded-md"
               type="text"
               placeholder="Book Author"
               name="author"
@@ -76,9 +76,9 @@ export default function Create() {
             />
           </div>
           <br />
-          <div>
-            <label htmlFor="">Book Price</label>
-            <input
+          <div className="text-lg text-orange-600">
+            <label className="mx-3" htmlFor="">Book Price</label>
+            <input className="focus:ring-0 focus:outline focus:outline-orange-500 focus:rounded-md"
               type="number"
               placeholder="Book Price"
               name="price"
@@ -93,9 +93,9 @@ export default function Create() {
             />
           </div>
           <br />
-          <div>
-            <label htmlFor="">Book ISBN</label>
-            <input
+          <div className="text-lg text-orange-600">
+            <label className="mx-3" htmlFor="">Book ISBN</label>
+            <input className="focus:ring-0 focus:outline focus:outline-orange-500 focus:rounded-md"
               type="number"
               placeholder="Book ISBN"
               name="isbn"
@@ -110,7 +110,7 @@ export default function Create() {
             />
           </div>
           <br />
-          <button type="submit">Submit</button>
+          <button className="mx-24 outline px-4 py-2 outline-orange-600 text-orange-600 rounded-md" type="submit">Submit</button>
         </form>
       </div>
     </>

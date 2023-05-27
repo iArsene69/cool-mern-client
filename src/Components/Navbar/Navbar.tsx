@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom'
+import { useToggleChange } from '../../Hooks/ToggleHook'
 
 export default function Navbar() {
+    const toggle = useToggleChange()
   return (
    <>
     <header className='sticky z-50 top-0 py-6 backdrop-filter backdrop-blur-lg bg-opacity-10'>
@@ -16,6 +18,11 @@ export default function Navbar() {
                     <Link to={'/create'}>
                         New
                     </Link>
+                </li>
+                <li>
+                    <button type='button' onClick={toggle}>
+                        cool button
+                    </button>
                 </li>
             </ul>
         </nav>
